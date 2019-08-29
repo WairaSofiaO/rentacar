@@ -12,7 +12,7 @@
 	<artifactId>rentacar</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>rentacar</name>
-	<description>proyecto para administrar prestamo de carros Spring Boot</description>
+	<description>Cambio para ver en git hub</description>
 
 	<properties>
 		<java.version>1.8</java.version>
