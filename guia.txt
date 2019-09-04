@@ -1,0 +1,40 @@
+Clase 9/3/2019
+-----------Decoradores----------
+
+
+-----------INTERFACES------------ 
+en src/main/java
+click derecho
+new
+package
+agregar .dao como nombre
+luego despues de que me cree la carpeta .dao
+click der
+new
+interface
+Nombre con buenas practicas: IVehiculoDao
+
+En la nueva interface IVehiculoDao
+
+Define la el encabezado del metodo, porque quien implemente el metodo le pone la logica
+
+	package com.accenture.rentacar.app.dao;
+	
+	import org.springframework.data.repository.CrudRepository;
+	
+	import com.accenture.rentacar.app.entity.Vehiculo;
+	
+	public interface IVehiculoDao extends CrudRepository<Vehiculo, Long>{
+		
+	}
+	
+---------Crear nueva interface IVehiculoService-----
+
+
+---------Crear una clase e implementarla en IVehiculoService------
+Click derecho en .service
+crear clase
+name VehiculoServiceImpl
+modo package
+interface add y escribir IVehiculoService
+ 
