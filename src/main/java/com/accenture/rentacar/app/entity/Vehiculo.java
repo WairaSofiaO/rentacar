@@ -29,6 +29,9 @@ public class Vehiculo {
 	private String linea;
 	private String color;
 	
+	public Vehiculo() {
+	}
+	
 	//DATE
 	//Date + ctrl+ space traer Date, traerlo de JAVA.UTIL
 	//El Java.Util es el date de java, necesitamos volverlo
