@@ -1,6 +1,6 @@
 Clase 9/3/2019
 -----------Decoradores----------
-
+clase Vehiculo.java
 
 -----------INTERFACES------------ 
 en src/main/java
@@ -98,9 +98,13 @@ class VehiculoServiceImpl implements IVehiculoService {
 
 }
 
------
+---------
 PARA 
 Click derecho en .main.java
 crear package
 name .controller
 crear clase VehiculoController
+---------
+La interfaz service solo tiene la firma de los metodos,
+la clase serviceImpl implementa los metodos de la interfaz y les pone logica,
+como una metodologia de programacion para permiti que esa interfaz pueda utilizarse de forma direfente 

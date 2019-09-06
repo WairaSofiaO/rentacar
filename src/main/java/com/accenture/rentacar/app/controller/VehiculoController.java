@@ -17,7 +17,7 @@ import com.accenture.rentacar.app.service.IVehiculoService;
 //Volverlo un controlador
 @RestController
 //Definir una url
-@RequestMapping("/api")
+@RequestMapping("/api") //para ejecutarlo: localhost:8080/api/vehiculos/id
 public class VehiculoController {
 	@Autowired
 	private IVehiculoService vehiculoService;
@@ -41,7 +41,7 @@ public class VehiculoController {
 	public Vehiculo actualizar(@RequestBody Vehiculo vehiculo) { // lo recibimos en el body de html
 		
 		Vehiculo vehiAActualizar = new Vehiculo();
-		Vehiculo vehiActual = vehiculoService.buscarVehiculoPorId(vehiculo.getId());
+		//Vehiculo vehiActual = vehiculoService.buscarVehiculoPorId(vehiculo.getId());
 		vehiAActualizar.setId(vehiculo.getId());
 		vehiAActualizar.setColor(vehiculo.getColor());
 		vehiAActualizar.setLinea(vehiculo.getLinea());

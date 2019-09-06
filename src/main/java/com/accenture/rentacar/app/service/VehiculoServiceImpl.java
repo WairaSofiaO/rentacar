@@ -14,7 +14,6 @@ class VehiculoServiceImpl implements IVehiculoService {
 	@Autowired //La instancia de la variable lo maneja sprint boot
 	private IVehiculoDao vehiculoDao;
 	
-	
 	@Override
 	public Vehiculo guardar(Vehiculo vehiculo) {
 		// TODO Auto-generated method stub
