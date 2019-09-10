@@ -50,6 +50,10 @@ public class VehiculoController {
 		vehiAActualizar.setPlaca(vehiculo.getPlaca());
 		return vehiculoService.guardar(vehiAActualizar);
 	}
+	@PostMapping("varios-vehiculos") //Para guardar varios vehiculo en un array y devolver una lista
+	public List<Vehiculo> guardar(@RequestBody Vehiculo[] vehiculos) {
+		return vehiculoService.guardarVarios(vehiculos);
+	}
 	@DeleteMapping("/vehiculos/{id}")
 	public String borrar(@PathVariable Long id) {
 		vehiculoService.borrar(id);

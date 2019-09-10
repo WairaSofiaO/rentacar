@@ -14,4 +14,6 @@ public interface IVehiculoService {
 	public void borrar(Long id);
 	public Vehiculo buscarVehiculoPorId(Long id);
 	public List<Vehiculo> listarTodos();
+	public List<Vehiculo> guardarVarios(Vehiculo[] vehiculos);
+	
 }
