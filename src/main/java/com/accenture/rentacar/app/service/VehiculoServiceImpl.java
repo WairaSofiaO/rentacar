@@ -41,9 +41,14 @@ class VehiculoServiceImpl implements IVehiculoService {
 	@Override
 	public List<Vehiculo> guardarVarios(Vehiculo[] vehiculos){
 		List<Vehiculo> retorno = new ArrayList<Vehiculo>();
-		
+		//En el foreach no tengo que saber cuantos objetos tiene la lista,
+		//no tengo que inicializarla, ni saber el tamaño del array,
 		for(Vehiculo vehiculo : vehiculos) {
-			vehiculoDao.save(vehiculo);
+			retorno.add(vehiculoDao.save(vehiculo));
+		}
+		//este for hace lo mismo que el foreach del de arriba
+		for(int i = 0; i<vehiculos.length; i++) {
+			retorno.add(vehiculoDao.save(vehiculos[i])); 
 		}
 		return retorno;
 	}
